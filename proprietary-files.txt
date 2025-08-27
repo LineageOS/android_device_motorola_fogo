@@ -1,4 +1,8 @@
+<<<<<<< HEAD   (552085 fogo: Update to U1UFNS34.41-98-3-19)
 # All unpinned blobs are extracted from fogo_g U1UFNS34.41-98-3-19
+=======
+# All unpinned blobs are extracted from fogos_g V1UFN35H.193-20
+>>>>>>> CHANGE (8b1d22 fogo: Update to V1UFN35H.193-20)
 
 # ACDB Data
 vendor/etc/acdbdata/Bluetooth_cal.acdb
