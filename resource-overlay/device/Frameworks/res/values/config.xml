@@ -22,6 +22,9 @@
         <item>20</item>
     </integer-array>
 
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
     <!-- Minimum screen brightness setting allowed by power manager.
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
@@ -104,7 +107,7 @@
          This array should have size one greater than the size of the config_autoBrightnessLevels
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessDisplayValuesNits">
+    <array name="config_autoBrightnessDisplayValuesNits">
         <item>3</item>
         <item>10</item>
         <item>20</item>
@@ -129,7 +132,7 @@
         <item>400</item>
         <item>400</item>
         <item>400</item>
-    </integer-array>
+    </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
@@ -161,7 +164,7 @@
          brightness modes but only the maximum brightness value obtainable in a sustainable manner.
 
          This array should be equal in size to config_screenBrightnessBacklight -->
-    <integer-array name="config_screenBrightnessNits">
+    <array name="config_screenBrightnessNits">
         <item>0</item>
         <item>3</item>
         <item>10</item>
@@ -178,7 +181,7 @@
         <item>225</item>
         <item>350</item>
         <item>400</item>
-    </integer-array>
+    </array>
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">motog5g2024</string>
@@ -240,34 +243,6 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
-    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveNotificationLed">true</bool>
-
-    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
-         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
-         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
-         and Strength as defined in Authenticators.java -->
-    <string-array name="config_biometric_sensors" translatable="false">
-        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
-    </string-array>
-
-    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
-         Note: this value is temporary and is expected to be queried directly
-         from the HAL in the future. -->
-    <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
-    </array>
-
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946747577212033</item> <!--item>displayId</item-->
-        <item>720</item> <!--item>sensorLocationX</item-->
-        <item>585</item> <!--item>sensorLocationY</item-->
-        <item>200</item> <!--item>sensorRadius</item-->
-    </array>
-
-    <!-- Indicates whether device has a power button fingerprint sensor. -->
-    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
-
     <!-- The default refresh rate for a given device. Change this value to set a higher default
          refresh rate. If the hardware composer on the device supports display modes with a higher
          refresh rate than the default value specified here, the framework may use those higher
@@ -287,6 +262,24 @@
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
          If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
     <integer name="config_defaultRefreshRateInZone">90</integer>
+
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+         and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false">
+        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
+    </string-array>
+
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <!-- Indicates whether device has a power button fingerprint sensor. -->
+    <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
 
     <!-- Whether this device is supporting the software microphone toggle -->
     <bool name="config_supportsMicToggle">true</bool>
