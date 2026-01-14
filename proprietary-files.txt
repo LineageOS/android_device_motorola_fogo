@@ -222,7 +222,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_nt36528_hdp_656_120.xml
 vendor/etc/SVIConfig.xml
 
 # Euicc
-product/app/EuiccPartnerApp/EuiccPartnerApp.apk
 product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk
 
