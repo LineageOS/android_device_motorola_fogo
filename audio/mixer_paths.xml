@@ -3854,6 +3854,31 @@
         <path name="dmic-endfire" />
     </path>
 
+    <!-- Fluence NN capture paths (ro.vendor.audio.sdk.fluence.nn.enabled) -->
+    <path name="dmic-nn">
+        <path name="dmic-endfire" />
+    </path>
+
+    <path name="handset-dmic-nn">
+        <path name="handset-dmic-endfire" />
+    </path>
+
+    <path name="speaker-dmic-nn">
+        <path name="speaker-dmic-endfire" />
+    </path>
+
+    <path name="voice-dmic-nn">
+        <path name="voice-dmic-ef" />
+    </path>
+
+    <path name="voice-speaker-dmic-nn">
+        <path name="voice-speaker-dmic-ef" />
+    </path>
+
+    <path name="voice-rec-dmic-nn">
+        <path name="voice-rec-dmic-ef" />
+    </path>
+
     <path name="speaker-dmic-broadside">
         <path name="speaker-dmic-endfire" />
     </path>
@@ -3956,6 +3981,14 @@
     </path>
 
     <path name="voice-speaker-tmic">
+        <path name="speaker-tmic" />
+    </path>
+
+    <path name="three-mic-nn">
+        <path name="three-mic" />
+    </path>
+
+    <path name="speaker-tmic-nn">
         <path name="speaker-tmic" />
     </path>
 
