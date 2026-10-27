@@ -42,12 +42,14 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libAncFaceDetect.so
 vendor/lib64/libBST3DDNS.so
 vendor/lib64/libBSTHDRDETECT.so
 vendor/lib64/libBSTMultiExpoGainHDR.so
 vendor/lib64/libBSTNodeUtils.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
+vendor/lib64/libancbase_fd.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
