@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f2ce35c_48150717",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-10-29T17:41:37Z",
+      "side": 1,
+      "message": "Blobs: https://github.com/elginsk8r/proprietary_vendor_motorola_fogo/tree/lineage-24.0",
+      "revId": "a68f96ab4e4b38ed94bf250656a37e47f78cdc58",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
