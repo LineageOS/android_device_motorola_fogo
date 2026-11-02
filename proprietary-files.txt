@@ -89,7 +89,9 @@ vendor/lib64/libopestriping.so
 vendor/lib64/libportrait_repair_ppl3_ocl.so
 vendor/lib64/libqll10.so
 vendor/lib64/libqllengine.so
+vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_wrapper.so
+vendor/lib64/librmsclib1.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libvidhance.so
@@ -165,6 +167,7 @@ vendor/etc/camera/anc_track_model
 vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/vidhance_calibration_2rd
+vendor/etc/tetras/portrait_repair_composite.model
 
 # Camera - feature2
 vendor/lib64/com.qti.feature2.anchorsync.so
